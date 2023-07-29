@@ -1,0 +1,71 @@
+{
+    "name": "baileys-api",
+    "description": "Simple RESTful WhatsApp API",
+    "private": true,
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+        "start": "node --max-old-space-size=4096 .",
+        "build": "babel app.js -d dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ookamiiixd/baileys-api.git"
+    },
+    "author": "ookamiiixd <ookamiiixd@gmail.com>",
+    "bugs": {
+        "url": "https://github.com/ookamiiixd/baileys-api/issues"
+    },
+    "homepage": "https://github.com/ookamiiixd/baileys-api#readme",
+    "engines": {
+        "node": ">=14.5.0"
+    },
+    "dependencies": {
+        "@adiwajshing/baileys": "^4.4.0",
+        "@adiwajshing/keyed-db": "^0.2.4",
+        "axios": "^0.26.1",
+        "dotenv": "^16.0.0",
+        "express": "^4.17.2",
+        "express-validator": "^6.14.0",
+        "jimp": "^0.16.1",
+        "link-preview-js": "^2.1.16",
+        "node-cleanup": "^2.1.2",
+        "pino": "^8.4.2",
+        "pm2": "^5.2.2",
+        "qrcode": "^1.5.0",
+        "sastrawijs": "^1.0.4",
+        "socket.io": "^4.5.1",
+        "socks-proxy-agent": "^7.0.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.18.6",
+        "@babel/core": "^7.18.6",
+        "@babel/plugin-transform-modules-commonjs": "^7.18.6",
+        "@babel/preset-env": "^7.18.6",
+        "eslint": "^8.5.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-xo": "^0.39.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "prettier": "^2.5.1"
+    },
+    "babel": {
+        "presets": [
+            [
+                "@babel/env",
+                {
+                    "targets": {
+                        "node": "current"
+                    }
+                }
+            ]
+        ],
+        "plugins": [
+            [
+                "@babel/plugin-transform-modules-commonjs",
+                {
+                    "allowTopLevelThis": true
+                }
+            ]
+        ]
+    }
+}

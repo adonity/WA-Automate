@@ -1,0 +1,98 @@
+import 'dotenv/config'
+import express from 'express'
+import nodeCleanup from 'node-cleanup'
+import routes from './routes.js'
+import { init, cleanup, sendMessage, getSession, isExists, formatPhone } from './whatsapp.js'
+import { Server } from 'socket.io'
+import axios from 'axios'
+import { delay } from '@adiwajshing/baileys'
+
+const app = express()
+const host = process.env.HOST ?? '127.0.0.1'
+const port = parseInt(process.env.PORT ?? 8000)
+
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+app.use('/', routes)
+
+export const io = new Server(
+    app.listen(port, host, () => {
+        init()
+        console.log(`Server is listening on http://${host}:${port}`)
+    }),
+    {
+        cors: {
+            origin: '*',
+        },
+    }
+)
+
+io.on('connection', function (socket) {
+    console.log('conntected')
+
+    if (socket.handshake.query.ids) {
+        const _ids = JSON.parse(socket.handshake.query.ids)
+
+        socket.join(_ids)
+    }
+
+    socket.on('disconnect', (reason) => {
+        console.log('disconnected : ' + reason)
+    })
+
+    socket.on('broadcast', async ({ devices, contacts, message, id, delay }) => {
+        console.log(`broadcast ${id} start`)
+        let i = 0
+
+        console.log(devices)
+
+        for (const contact of contacts) {
+            const device = devices[i]
+            const session = getSession(device.id + '')
+
+            if (session != null) {
+                try {
+                    const number = formatPhone(contact.contact.number)
+
+                    const exists = await isExists(session, number)
+
+                    if (!exists) {
+                        updateBlastStatus({ id, device_id: device.id, contact_id: contact.id, status: '0' })
+                        continue
+                    }
+
+                    #try {
+                        console.log(delay)
+                        await delay(parseInt(delay))
+                        session.sendMessage(number, message)
+                        updateBlastStatus({ id, device_id: device.id, contact_id: contact.id, status: '1' })
+                    
+#} catch {
+                        updateBlastStatus({ id, device_id: device.id, contact_id: contact.id, status: '0' })
+                    }
+                } catch {
+                    updateBlastStatus({ id, device_id: device.id, contact_id: contact.id, status: '0' })
+                }
+            } else {
+                updateBlastStatus({ id, device_id: device.id, contact_id: contact.id, status: '0' })
+            }
+
+            i = i == devices.length - 1 ? 0 : i + 1
+        }
+    })
+})
+
+const updateBlastStatus = ({ id, device_id, contact_id, status }) => {
+    axios
+        .post(process.env.SERVER_URL + '/api/blast/status-update', { contact_id, status, device_id, id })
+        .then(function (response) {
+            io.emit('blast-' + id, { message: { contact_id, status, device_id, id } })
+        })
+        .catch(function (error) {
+            console.log(error)
+        })
+}
+
+nodeCleanup(cleanup)
+
+export default app

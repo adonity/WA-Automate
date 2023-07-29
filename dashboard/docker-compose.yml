@@ -1,0 +1,54 @@
+version: "3.8"
+services:
+  app:
+    image: chandika7d/wa-dashboard
+    container_name: web
+    restart: always
+    volumes:
+      - storage:/storage
+    networks:
+      - whatsapp
+  db:
+    image: postgres
+    container_name: db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - whatsapp
+  api:
+    image: chandika7d/wa-core
+    container_name: api
+    restart: always
+    volumes:
+      - media:/app/media
+      - sessions:/app/sessions
+    ports:
+      - "3000:3000"
+    networks:
+      - whatsapp
+  nginx:
+    image: nginx:alpine
+    container_name: webserver
+    restart: unless-stopped
+    ports:
+      - 8000:80
+      - 8443:443
+    volumes:
+      - ./:/var/www
+      - ./docker-compose/nginx:/etc/nginx/conf.d
+    networks:
+      - whatsapp
+networks:
+  whatsapp:
+    driver: bridge
+volumes:
+  storage:
+  media:
+  sessions:

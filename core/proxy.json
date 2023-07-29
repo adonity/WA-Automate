@@ -1,0 +1,253 @@
+[
+    {
+        "hostname": "182.54.239.91",
+        "port":   8108,
+        "userId": "dmproxy143",
+        "password": "dmproxy143"
+    },
+    {"hostname":"182.54.239.210",
+    "port": 8227,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.59",
+    "port": 8076,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.184",
+    "port": 8201,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.87",
+    "port": 8104,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.247",
+    "port": 8264,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.89",
+    "port": 8106,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.79",
+    "port": 8096,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.214",
+    "port": 8231,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.121",
+    "port": 8138,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.7",
+    "port": 8024,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.91",
+    "port": 8108,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.193",
+    "port": 8210,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.84",
+    "port": 8101,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.54",
+    "port": 8071,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.78",
+    "port": 8095,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.27",
+    "port": 8044,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.98",
+    "port": 8115,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.159",
+    "port": 8176,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.151",
+    "port": 8168,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.64",
+    "port": 8081,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.230",
+    "port": 8247,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.92",
+    "port": 8109,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.122",
+    "port": 8139,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.211",
+    "port": 8228,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.213",
+    "port": 8230,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.14",
+    "port": 8031,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.132",
+    "port": 8149,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.60",
+    "port": 8077,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.111",
+    "port": 8128,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.99",
+    "port": 8116,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.34",
+    "port": 8051,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.160",
+    "port": 8177,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.228",
+    "port": 8245,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.8",
+    "port": 8025,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.123",
+    "port": 8140,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.161",
+    "port": 8178,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.220",
+    "port": 8237,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.141",
+    "port": 8158,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.57",
+    "port": 8074,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.5",
+    "port": 8022,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.147",
+    "port": 8164,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.48",
+    "port": 8065,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.219",
+    "port": 8236,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.129",
+    "port": 8146,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.155",
+    "port": 8172,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.172",
+    "port": 8189,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.201",
+    "port": 8218,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.22",
+    "port": 8039,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+},
+    {"hostname":"182.54.239.2",
+    "port": 8019,
+    "userId":"dmproxy143",
+    "password":"dmproxy143" 
+}
+]
