@@ -1,2 +1,2 @@
-# WA-Automate
- Whatsapp automatic read and reply
+# Whatsapp-Automate
+Automatic triggered text read and reply with proxy
